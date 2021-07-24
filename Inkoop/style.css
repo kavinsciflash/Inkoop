@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: clarendon;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .card {
+  width: 170px;
+  height: 200px;
+  padding: 30px 30px;
+  margin: 20px;
+  background: rgba(242, 242, 245, 0.863);
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+  border-radius: 20px;
+}
+.container .card .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .card .content .imgBx {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.container .card .content .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .card .content .contentBx h4 {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .card .content .sci {
+  margin-top: 20px;
+}
+.container .card .content .sci a {
+  text-decoration: none;
+  color: #6c758f;
+  font-size: 30px;
+  margin: 10px;
+  transition: color 0.4s;
+}
+.container .card .content .sci a:hover {
+  color: #0196e3;
+}
+.bundle {
+  padding-bottom: 20px;
+}
+.fluid {
+  line-height: 3.3rem;
+}
+.cent {
+  padding-top: 10px;
+}
+
+@media (min-width: 240px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: clarendon;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  #menubar {
+    position: fixed;
+    height: 100%;
+    width: 30%;
+    left: -30%;
+    background: none;
+  }
+  #menubar li {
+    color: white;
+    font-size: 21px;
+    padding: 15px;
+  }
+  #menubar ul button {
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: rgba(245, 10, 10, 0.884);
+    border-color: rgba(245, 10, 10, 0.884);
+  }
+  #menubar ul h3 {
+    margin-left: 1.5rem;
+    margin-bottom: 20px;
+    font-size: 21px;
+    margin-top: 10px;
+  }
+  #menubar ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
+  #menubar ul li a strike {
+    color: red;
+  }
+  #menubar ul li a strike span {
+    color: black;
+  }
+  .toggle-btn {
+    position: absolute;
+    left: 100%;
+    top: 15px;
+  }
+  .toggle-btn span {
+    display: block;
+    color: white;
+    width: 30px;
+    height: 5px;
+    background-color: rgb(248, 64, 95);
+    margin: 3px;
+  }
+
+  #menubar.active {
+    left: 0;
+  }
+  .fluid {
+    margin-left: 100px;
+    font-size: 18px;
+    padding-top: 40px;
+  }
+  .solid {
+    margin-left: 50px;
+    color: rgb(102, 80, 80);
+    border-bottom: 2px solid red;
+    width: 50px;
+    padding-bottom: 20px;
+  }
+  .Epsum {
+    display: none;
+  }
+  .master {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: clarendon;
+  }
+
+  body {
+    margin-left: 50px;
+    background: #f2f3f7;
+    margin-top: 6rem;
+  }
+  .sidebar {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 30px;
+    display: inline;
+  }
+  .sidebar ul {
+    list-style: none;
+  }
+
+  .sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 20px 10px;
+    margin-left: 5px;
+  }
+  .sidebar ul h3 {
+    margin-left: 1.5rem;
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
+  .sidebar ul button {
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: rgba(245, 10, 10, 0.884);
+    border-color: rgba(245, 10, 10, 0.884);
+  }
+
+  .sidebar ul li a strike {
+    color: red;
+  }
+  .sidebar ul li a strike span {
+    color: black;
+  }
+  #menubar {
+    display: none;
+  }
+
+  .fluid {
+    margin-left: 280px;
+    font-size: 21px;
+  }
+  .solid {
+    display: none;
+  }
+  .Epsum {
+    margin-left: 45rem;
+    display: block;
+    position: absolute;
+    color: rgb(102, 80, 80);
+    border-bottom: 2px solid red;
+    width: 40px;
+    margin-top: 50px;
+  }
+  .cent {
+    display: none;
+  }
+  .master {
+    display: block;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 15rem;
+  }
+}
