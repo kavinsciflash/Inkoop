@@ -170,10 +170,18 @@
     display: block;
     color: white;
     width: 30px;
-    height: 5px;
+    height: 3px;
     background-color: rgb(248, 64, 95);
-    margin: 3px;
+    margin: 5px;
+    margin-left: 20px;
   }
+  .toggle-btn .f {
+    width: 20px;
+  }
+  .toggle-btn .t{
+    width: 25px;
+  }
+
   #menubar.active {
     left: 0;
     backface-visibility: visible;
@@ -203,6 +211,17 @@
   .cent {
     padding-top: 10px;
     text-align: center;
+  }
+.shpy{
+    float: right;
+    position: relative;
+    top: 15px;
+    right:10px;
+    color: rgb(248, 64, 95);
+    transform: scaleX(-1);
+    font-size: 25px;
+    display: block;
+    
   }
   .cent h1{
     margin-left: 10px;
@@ -247,6 +266,9 @@
   }
   .sidebar ul {
     list-style: none;
+  }
+  .shpy{
+    display: none;
   }
 
   .sidebar ul li a {
